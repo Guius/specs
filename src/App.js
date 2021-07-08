@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { Switch, Route } from "react-router-dom";
+
+import CocktailList from "./components/CocktailList";
+import SearchBox from "./components/SearchBox";
+import Details from "./components/Details";
+
+import styles from "./styles/cocktailList.module.css";
+import searchBox from "./styles/searchBox.module.css";
+import "./styles/appStyles.module.css";
+
+class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = { userInput: "" };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(userInput) {
+    this.setState({ userInput: userInput });
+  }
+
+  render() {
+    return (
+      <div>
+        <SearchBox
+          value={this.state.userInput}
+          onInputChange={this.handleInputChange}
+          onScreenChange={this.handleScreenChange}
+          className={searchBox.container}
+        />
+        <div className={styles.container}>
+          <CocktailList filter={this.state.userInput} />
+        </div>
+      </div>
+    );
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/details/:id">
+          <Details />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }

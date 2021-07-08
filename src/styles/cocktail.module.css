@@ -1,0 +1,17 @@
+.text {
+  font-size: 20px;
+}
+
+.box {
+  border: 5px black solid;
+}
+
+.textDetails {
+  font-size: 25px !important;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

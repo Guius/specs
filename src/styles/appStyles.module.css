@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(255, 232, 222);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+a,
+p,
+li,
+input,
+::placeholder {
+  color: rgb(88, 88, 88);
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  background-color: rgb(255, 226, 214);
+}

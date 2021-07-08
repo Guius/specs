@@ -1,0 +1,8 @@
+TODO:
+
+- change font of titles
+- change colours of cocktail list
+    - one cocktail of one colour, the other of the other
+- add text separators
+- add images ?
+- add better spacing of cocktails

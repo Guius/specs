@@ -1,0 +1,17 @@
+TODO:
+- Add the cocktail code to the details page - DONE
+- change the content of the coctkail list page - TODO
+    - Name - DONE
+    - Picture - DONE
+        - download pictures - DONE
+        - add them - DONE
+        - style them - DONE
+    - Base Spirit - DONE
+        - style - DONE
+    
+- plan style of new cocktail list - DONE
+- style new cocktail list - DONE
+- plan style of details page - TODO
+- change style of details page - TODO
+- add button to go back to home page - TODO
+- change search bar for mobiles - TODO

@@ -1,0 +1,192 @@
+.pageContainer {
+  height: 100vh;
+  width: auto;
+}
+
+.contentsContainer {
+  display: grid;
+  height: 90vh;
+  width: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.imageContainer {
+  grid-column: 1/3;
+  grid-row: 1/8;
+}
+
+.titleContainer {
+  grid-column: 3/5;
+  grid-row: 1/4;
+  background-color: rgb(255, 226, 214);
+}
+
+.ingredientsTitle {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  background-color: rgb(255, 226, 214);
+}
+
+.glasswareTitle {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  background-color: rgb(255, 226, 214);
+}
+
+.garnishTitle {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  background-color: rgb(255, 226, 214);
+}
+
+.methodTitle {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  background-color: rgb(255, 226, 214);
+}
+
+.ingredients {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  background-color: rgb(255, 226, 214);
+}
+
+.glassware {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  background-color: rgb(255, 226, 214);
+}
+
+.garnish {
+  grid-column: 4/5;
+  grid-row: 6/7;
+  background-color: rgb(255, 226, 214);
+}
+
+.method {
+  grid-column: 4/5;
+  grid-row: 7/8;
+  background-color: rgb(255, 226, 214);
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.rightArrow {
+  font-size: 40px;
+  margin: 0%;
+  padding-left: 2%;
+  font-weight: bold;
+}
+
+.paddingTitle {
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentsContainer {
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+  .titleContainer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .imageContainer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(255, 226, 214);
+  }
+
+  .ingredientsTitle {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ingredients {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glasswareTitle {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glassware {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+  }
+
+  .garnishTitle {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .garnish {
+    grid-column: 1/2;
+    grid-row: 8/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .methodTitle {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .method {
+    grid-column: 1/2;
+    grid-row: 10/11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
